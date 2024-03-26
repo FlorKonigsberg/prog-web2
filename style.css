@@ -1,26 +1,47 @@
-#imagen1
-#imagen2
-
 
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.header { grid-area: 1 / 1 / 2 / 3; background-color: rgb(177, 176, 176);
+    position: fixed; /* Establece la posición fija */
+    top: 0; /* Coloca el encabezado en la parte superior de la ventana del navegador */
+    width: 100%; /* Establece el ancho al 100% del viewport */
+    height: 100px; /* Ajusta la altura del encabezado según tu preferencia */
+    background-color: rgba(177, 176, 176, 0.867); /* Cambia el color de fondo según tu preferencia */
+    background-size: cover; /* Escala la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    
   }
-  
-  .header { grid-area: 1 / 1 / 2 / 3; 
-  background-color: pink;}
-  
-  
-  .body { grid-area: 2 / 1 / 4 / 3;
-  background-color: grey; }
-  
-  
-  .footer { grid-area: 4 / 1 / 5 / 3; 
-  background-color: rgb(115, 166, 243);}
-  
-  .nav { grid-area: 2 / 2 / 3 / 3; 
-  background-color: violet;}
+.fotoencabezado {
+  width: 500px; /* Ajusta el tamaño de la imagen según tu preferencia */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-right: 10px; /* Espaciado a la derecha para separar la imagen del texto */
+}
 
 
+
+
+.body { grid-area: 2 / 1 / 4 / 3;background-color: rgb(236, 187, 219);}
+
+.body img[src="https://i.pinimg.com/474x/91/a8/bb/91a8bb4a4be8693403cb57ffe041cabd.jpg"] {
+  width: 700px; /* Establece el ancho de la primera imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente */}
+
+
+.body img[src="https://i.pinimg.com/originals/27/2e/1f/272e1f42e3fdd732afb2d7802a0e4250.jpg"] {
+  width: 700px; /* Establece el ancho de la segunda imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente */}
+
+.body img[src="https://i.pinimg.com/474x/ae/23/4d/ae234ddf0826afc435e6c1388d1cc3b8.jpg"] {
+  width: 620px; /* Establece el ancho de la tercera imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente */}
+
+
+.footer { grid-area: 4 / 1 / 5 / 3;background-color: rgb(147, 237, 237); }
+
+.nav { grid-area: 2 / 2 / 3 / 3;background-color: rgb(232, 168, 232); }
